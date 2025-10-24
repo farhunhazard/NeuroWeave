@@ -5,20 +5,21 @@ Where multi-agent reasoning meets decentralized proof — shaping explainable in
 ---
 
 ## 🧠 Overview  
-**NeuroWeave AI** is an AI-powered collaborative intelligence and explainability platform that blends multi-agent reasoning, blockchain validation, and transparent analytics.  
-It enables teams to ideate collectively, visualize their reasoning through explainable AI graphs, and mint insights as NFTs — ensuring both **trust** and **traceability** in the innovation process.
+**NeuroWeave AI** is an AI-powered collaborative intelligence and explainability platform that fuses multi-agent reasoning, blockchain validation, and transparent analytics.  
 
-This project was built as part of a **Hackathon 2025 Edition** submission — showcasing innovation, transparency, and enterprise-grade scalability.
+It empowers teams to **ideate collectively**, visualize reasoning via explainable AI graphs, and **mint insights as NFTs** — ensuring both **trust** and **traceability** across innovation lifecycles.  
+
+This project was built as part of **Hackathon 2025 Edition**, showcasing cutting-edge transparency, innovation, and enterprise-grade scalability.
 
 ---
 
 ## 🚀 Features  
-- 🤖 **Collective Intelligence Simulation** — Multi-agent reasoning (Logic, Data, Empathy, Creative) collaborating on user prompts.  
-- 🧩 **NeuroGraph Visualization** — Interactive, explainable graph showing concept overlaps, agent influence, and reasoning trace.  
-- 💰 **AI Performance Dashboard** — Real-time system metrics with explainability, token efficiency, and downloadable PDF report.  
-- 🪙 **NFT Minting Portal** — Instantly mint AI-generated insights as NFTs on the Celo blockchain with Pinata IPFS storage.  
-- 💼 **Business Impact Analyzer** — AI-evaluated market potential, feasibility, innovation index, and ROI analysis.  
-- 🌗 **Light/Dark Theme Responsive Design** — Works beautifully across both themes and mobile devices.  
+- 🤖 **Collective Intelligence Simulation** — Multi-agent collaboration across Logic, Data, Empathy, and Creative personas.  
+- 🧩 **NeuroGraph Visualization** — Interactive explainable AI graphs showing agent influence, concept overlap, and consensus clarity.  
+- 💰 **AI Performance Dashboard** — Real-time explainability metrics with coherence, reasoning depth, and token efficiency.  
+- 🪙 **NFT Minting Portal** — Seamless minting of AI-generated insights on **Celo Testnet** with **Pinata IPFS storage**.  
+- 💼 **Business Impact Analyzer** — LLM-powered evaluation of feasibility, ROI, and innovation index.  
+- 🌗 **Responsive UI** — Fully optimized for both light/dark themes and mobile compatibility.  
 
 ---
 
@@ -31,41 +32,43 @@ This project was built as part of a **Hackathon 2025 Edition** submission — sh
 | **Blockchain** | Celo (Alfajores Testnet) + Web3.py |
 | **Storage** | IPFS via [Pinata API](https://pinata.cloud) |
 | **Visualization** | NetworkX, PyVis, Matplotlib, Plotly |
-| **AI Explainability** | OpenAI API, TF-IDF, Multi-agent simulation |
+| **AI Explainability** | OpenAI API, TF-IDF, Multi-Agent Reasoning |
 
 ---
 
 ## 🧩 Architecture  
 
-```text
 ┌───────────────────────────┐
-│     User Interaction      │
-│  (Streamlit Web App)      │
+│ User Interaction │
+│ (Streamlit App) │
 └────────────┬──────────────┘
-             │
-             ▼
+│
+▼
 ┌───────────────────────────┐
-│  Multi-Agent Reasoning    │
-│  (Logic, Data, Empathy,   │
-│   Creative via OpenAI)    │
+│ Multi-Agent Reasoning │
+│ (Logic, Data, Empathy, │
+│ Creative via OpenAI) │
 └────────────┬──────────────┘
-             │
-             ▼
+│
+▼
 ┌───────────────────────────┐
-│  NeuroGraph Visualization │
-│  (Explainable AI + XAI)   │
+│ NeuroGraph Visualization │
+│ (Explainable AI + XAI) │
 └────────────┬──────────────┘
-             │
-             ▼
+│
+▼
 ┌───────────────────────────┐
-│ Blockchain & NFT Minting  │
-│ (Celo + Pinata IPFS)      │
+│ Blockchain & NFT Minting │
+│ (Celo + Pinata IPFS) │
 └───────────────────────────┘
-```text
 
-## 🛠️ Installation
-1️⃣ Clone the Repository
 
+---
+
+## 🛠️ Installation  
+
+### 1️⃣ Clone the Repository  
+```bash
 git clone https://github.com/<your-username>/NeuroWeave.git
 cd NeuroWeave
 
@@ -78,9 +81,9 @@ source venv/bin/activate  # on macOS/Linux
 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-## 🔐 Environment Variables
+🔐 Environment Variables
 
-Create a .env file in your root directory:
+Create a file named .env in your project root and add:
 
 OPENAI_API_KEY="your-openai-api-key"
 PINATA_API_KEY="your-pinata-api-key"
@@ -90,45 +93,69 @@ CELO_RPC="https://alfajores-forno.celo-testnet.org"
 CONTRACT_ADDRESS="your-deployed-contract-address"
 CONTRACT_ABI_JSON="contract_abi.json"
 
+
+⚙️ Tip:
+In VS Code, enable .env auto-loading by turning on
+python.terminal.useEnvFile = true in your settings.
+
 ▶️ Run the App
 streamlit run app.py
+
 
 Then open http://localhost:8501
  in your browser.
 
-## 🧾 Key Modules
+🧾 Key Modules
 File	Description
-app.py	Main Streamlit application integrating all features
-modules/agents.py	Handles multi-agent reasoning and OpenAI API integration
-modules/ipfs.py	Uploads data to Pinata (IPFS)
-modules/nft.py	Handles blockchain minting logic on Celo
+app.py	Main Streamlit application integrating all modules
+modules/agents.py	Multi-agent reasoning & OpenAI integration
+modules/ipfs.py	Handles IPFS upload to Pinata
+modules/nft.py	NFT minting logic on Celo blockchain
 contracts/NeuroWeave.sol	Smart contract for NFT minting
-contract_abi.json	Contract ABI file for Web3 interaction
+contract_abi.json	ABI interface for Web3 interaction
+📄 AI Explainability Highlights
 
-## 📄 AI Explainability Highlights
+🔍 Transparent Reasoning: Each AI agent’s contribution and overlap are clearly visible.
 
-Transparent Reasoning: Each AI agent’s contribution and overlap are visible.
+📊 Explainability Dashboard: Quantitative metrics — coherence, diversity, reasoning depth, token efficiency.
 
-Explainability Dashboard: Quantitative performance metrics — coherence, diversity, reasoning depth.
+🧾 Downloadable Reports: Elegant PDF report with logo, insights, and explainability trace.
 
-Downloadable Reports: Professionally styled PDF generation with project logo and timeline trace.
-
-## 🏆 Hackathon Highlights
+🏆 Hackathon Highlights
 
 🏅 Best AI Explainability
 💫 Grand Prize Contender
 🚀 Most Innovative Integration
 
-## 💡 Why NeuroWeave Deserves to Win
+💡 Why NeuroWeave Deserves to Win
 
 NeuroWeave redefines transparency in AI — merging collective reasoning, explainable insights, and blockchain validation.
-It stands out for its clarity, innovation, and storytelling that resonates with both judges and enterprise audiences.
+It stands out through clarity, innovation, and powerful storytelling, appealing to both judges and enterprise audiences.
 
-## 🧑‍💻 Author
+🧑‍💻 Author
 
 👨‍💻 Mohamed Farhun M
 Hackathon Builder | AI × Blockchain Innovator
 
-## ⭐ Show your support
+📫 LinkedIn
 
-If you liked this project, please give it a ⭐ on GitHub — it helps showcase hackathon innovation and inspires others!
+🌐 GitHub
+
+⭐ Show Your Support
+
+If you liked this project, please give it a ⭐ on GitHub —
+it helps promote open innovation and inspires other builders.
+
+🧠 Built With
+
+❤️ Streamlit for interactive UI
+
+⚙️ OpenAI GPT-4o for reasoning & summarization
+
+🔗 Celo Blockchain for decentralized NFT proof
+
+☁️ Pinata IPFS for content immutability
+
+🧩 NeuroWeave Framework for AI Explainability
+
+© 2025 NeuroWeave AI | Built with ❤️ by Mohamed Farhun M
