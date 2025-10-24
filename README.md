@@ -61,7 +61,7 @@ This project was built as part of a **Hackathon 2025 Edition** submission — sh
 │ Blockchain & NFT Minting  │
 │ (Celo + Pinata IPFS)      │
 └───────────────────────────┘
-
+```text
 
 ## 🛠️ Installation
 1️⃣ Clone the Repository
